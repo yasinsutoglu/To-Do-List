@@ -20,9 +20,9 @@ addTask.addEventListener("click" , ()=>{
 
     if(!inputTask.value){
         alert("Enter Something")
-    }else{
-         taskDiv.appendChild(task);
     }
+         taskDiv.appendChild(task);
+
 
     inputTask.value = "";
 
@@ -36,8 +36,17 @@ addTask.addEventListener("click" , ()=>{
     trash.addEventListener("click" , (e)=>{
         e.target.parentElement.parentElement.parentElement.remove();
     })
+    
+     
 
 });
+
+
+inputTask.addEventListener("keydown", (e)=>{
+    if(e.code == "Enter"){
+        addTask.click();
+    }
+})
 
 
 

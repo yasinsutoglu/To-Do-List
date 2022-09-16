@@ -6,11 +6,10 @@
 
 body{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    display: flex;
-    justify-content: center;
 }
 
 .container{
+    margin: auto;
     width: 80vw;
     margin-top: 10rem;
     display: flex;
@@ -25,9 +24,11 @@ body{
 }
 
 .sect{
- border:1px solid red;
+ /* border:1px solid red; */
  width:40rem;
- text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 #input{
@@ -37,6 +38,9 @@ body{
     font-size: 1.2rem;
     border-top-left-radius:10px;
     border-bottom-left-radius: 10px;
+}
+#del-btn{
+    margin-left: -5px;
 }
 
 .btn{
@@ -53,3 +57,63 @@ body{
     background-color:#97BBE8;
 }
 
+.tasks{
+    /* border: 1px solid red; */
+    width: 40rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+/***********TASK'lar*********/
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-bottom: .5rem;
+    background-color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding:.5rem;
+    border-radius: 10px;
+}
+
+.task:hover{
+    box-shadow: 0 0 15px #241c20;
+    border: 1px solid blue;
+}
+
+.task button{
+    background-color:#E8AFCC ;
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.task .fa-circle-check{
+    transition: all 1s;
+}
+
+.task .fa-circle-check:hover{
+   color: limegreen;
+}
+
+.task .fa-trash-can{
+    transition: all 1s;
+}
+
+.task .fa-trash-can:hover{
+    color:red;
+}
+
+.task i{
+    color:white;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.5rem;
+}
+
+.linethrough{
+    text-decoration: line-through;
+}

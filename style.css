@@ -64,7 +64,7 @@ body{
     margin-top: 5rem;
 }
 
-/***********TASK'lar*********/
+/***********TASKs*********/
 
 .task{
     display: flex;
@@ -97,6 +97,10 @@ body{
 
 .task .fa-circle-check:hover{
    color: limegreen;
+}
+
+.task .fa-check-double:hover{
+   color: brown;
 }
 
 .task .fa-trash-can{

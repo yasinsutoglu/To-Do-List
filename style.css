@@ -127,3 +127,60 @@ body{
     text-decoration: line-through;
 }
 
+/***********Responsive*******/
+
+@media  screen and (max-width:1180px) {
+    
+    .container {
+        flex-direction: column;    
+    }
+
+    .container h1{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .sect{
+        width:100%;
+    }
+
+    .task{
+        width:80%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media  screen and (max-width:650px) {
+    .sect{
+        width:100%;
+        flex-direction: column;
+        gap:1rem;
+        margin: auto;
+    }
+
+    #input{
+        border-radius: 10px;
+        width:15rem;
+    }
+
+    .buttons .btn{
+        margin: 0 25px;
+    }
+
+    .tasks{
+        width: 80%;
+    }
+    .task{
+        width:100%;
+        font-size: 1rem;
+    }
+
+    .task button{
+        padding: 1px;
+    }
+
+    .task button i{
+        padding: 3px;
+        font-size: .7rem;
+    }
+}

@@ -43,6 +43,7 @@ addTask.addEventListener("click" , ()=>{
 
     trashes.forEach(el => el.addEventListener("click", (e)=>{
         e.target.parentElement.parentElement.parentElement.remove();
+        inputTask.focus();
     }))     
 
 });

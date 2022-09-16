@@ -39,6 +39,11 @@ body{
     border-top-left-radius:10px;
     border-bottom-left-radius: 10px;
 }
+
+#input:focus{
+    border:3.5px solid blue;
+}
+
 #del-btn{
     margin-left: -5px;
 }
